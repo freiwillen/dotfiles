@@ -62,28 +62,7 @@ if has("multi_byte")
 endif
 
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-rails'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'slim-template/vim-slim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'heartsentwined/vim-emblem'
-
-Plugin 'rking/ag.vim'
-Plugin 'kien/ctrlp.vim.git'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'scrooloose/nerdtree'
-
-Plugin 'vim-rspec'
-Plugin 'vim-tmux-runner'
-Plugin 'christoomey/vim-tmux-navigator'
-"Plugin 'vim-crystal'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-commentary'
+source ~/dotfiles/vim/plugins
 
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
