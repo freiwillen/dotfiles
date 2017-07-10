@@ -10,6 +10,15 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set number
+set rnu
+
+set cursorline                      " highlight the cursor screen line "
+set cursorcolumn                      " highlight the cursor screen line "
+
+set scrolloff=5                     " minimal number of screen lines to keep above and below the cursor "
+
+set fillchars=vert:\                " disable vert div chars
+
 
 set guifont=Menlo\ Regular\ for\ Powerline:h15
 
@@ -81,10 +90,11 @@ autocmd VimResized * :wincmd =
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
-let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
+let g:rspec_command = "VtrSendCommandToRunner! rspec {spec}"
 
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+colorscheme neodark
