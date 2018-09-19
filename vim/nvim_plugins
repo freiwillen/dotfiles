@@ -1,0 +1,49 @@
+set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin()
+
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'rking/ag.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
+Plug 'bling/vim-airline'
+
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'kana/vim-textobj-user'
+Plug 'jgdavey/vim-blockle'
+Plug 'junegunn/vim-easy-align'
+
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'othree/javascript-libraries-syntax.vim'
+
+Plug 'vim-ruby/vim-ruby'
+
+Plug 'christoomey/vim-tmux-navigator'
+
+"Plugin 'tpope/vim-haml'
+"Plugin 'tpope/vim-rails'
+"Plugin 'Lokaltog/vim-powerline'
+"Plugin 'slim-template/vim-slim'
+"Plugin 'kchmck/vim-coffee-script'
+"Plugin 'heartsentwined/vim-emblem'
+
+"Plugin 'rking/ag.vim'
+"Plugin 'kien/ctrlp.vim.git'
+"Plugin 'scrooloose/nerdtree'
+
+"Plugin 'thoughtbot/vim-rspec'
+"Plugin 'christoomey/vim-tmux-runner'
+"Plugin 'vim-crystal'
+
+call plug#end()            " required
+
